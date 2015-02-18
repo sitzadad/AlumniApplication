@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <title>Movie Application</title>
+  <link rel='stylesheet' href='bower_components/bootstrap/dist/css/bootstrap.css'/>
+  <link rel='stylesheet' href='bower_components/font-awesome/css/font-awesome.css'/>
+  <link rel='stylesheet' href='style.css'/>
+  <script type='text/template' id='alumniTempl'>
+
+
+      <h2 class='movieListing title'><%= title %></h2>
+      <img class='movieListing imageURL' src=<%= imageURL %>>
+      <p class='movieListing releaseDate'><%= releaseDate %></p>
+      <p class='movieListing synopsis'><%= synopsis %></p>
+      <form action='' class='editMovieForm'>
+        <p><input type='text' name='updateTitle' placeholder='Title'></p>
+        <p><input type='text' name='updateImage' placeholder='Image'></p>
+        <p><input type='text' name='updateReleaseDate' placeholder='Release Date'></p>
+        <p><textarea name='updateSynopsis' id='' cols='30' rows='10' placeholder='Synopsis'></textarea></p>
+        <p><button type='submit'>Update Movie Listing</button></p>
+      </form>
+      <button class='fa fa-times'>Delete</button>
+      <button class="fa fa-pencil-square-o">Edit</button>
+
+
+  </script>
+
+</head>
+<body>
+  <section>
+
+
+
+  </section>
+
+  <script src='bower_components/underscore/underscore.js'></script>
+  <script src='bower_components/jquery/dist/jquery.js'></script>
+  <script src='bower_components/backbone/backbone.js'></script>
+
+  <script src='models.js'></script>
+  <script src='collections.js'></script>
+  <script src='views.js'></script>
+  <script src='main.js'></script>
+</body>
+</html>
